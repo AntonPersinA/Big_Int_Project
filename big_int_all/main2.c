@@ -27,7 +27,6 @@ int while_true_func()
 
 int main()
 {
-    func_search_prime();
-
+    while_true_func();
     return 0;
 }
