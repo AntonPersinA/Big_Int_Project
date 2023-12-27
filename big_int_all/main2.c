@@ -14,20 +14,9 @@
 #include "lib/lib.h"
 #include "test/test.h"
 
-int while_true_func()
-{
-    int i = 1; //1692
-    while (test_all(i) && i < 1750)
-    {
-        printf("i = %d\n", i);
-        ++i;
-    }
-}
-
 
 int main()
 {
-    func_search_prime();
 
     return 0;
 }
