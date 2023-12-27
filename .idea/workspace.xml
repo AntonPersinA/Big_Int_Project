@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="BI_Project" targetName="BI_Project" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56cd604f-a42c-4f94-a56b-9e6bd2b0e73c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/big_int_all/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/cache-v2-81497c56f4f78ff81863.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-7b5a602a1b31adc83a16.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-eaf2a552c52b04c2152b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-21T17-37-06-0078.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/target-main-Debug-6cd301cbe89eb6253a31.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-ab6bc179ddbddbdb0d31.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/3.27.0/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/3.27.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/3.27.0/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/3.27.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/3.27.0/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/BI_Project.dir/big_int/big_int.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/BI_Project.dir/lib/lib.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/BI_Project.dir/main2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/BI_Project.dir/test/test.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main.dir/big_int/big_int.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main.dir/lib/lib.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main.dir/main2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main.dir/test/test.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main2.dir/big_int/big_int.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main2.dir/lib/lib.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main2.dir/main2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/main2.dir/test/test.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big_int_all/main2.c" beforeDir="false" afterPath="$PROJECT_DIR$/big_int_all/main2.c" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2ZqRGEXdXC9K9QQ2imT66ZpmJB6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "CMake Application.BI_Project.executor": "Run",
+    "CMake Application.Unnamed.executor": "Run",
+    "CMake Application.main.executor": "Run",
+    "CMake Application.main2.executor": "Run",
+    "CMake Application.main_BI.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "Shell Script.main2C.sh.executor": "Run",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "test",
+    "last_opened_file_path": "/home/anton/CLionProjects/BI_Project/big_int_all",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/big_int_all" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BI_Project" RUN_TARGET_NAME="BI_Project" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CMake.Explicit.Target" explicitTargetName="all" />
+      </method>
+    </configuration>
+    <configuration name="main_BI" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/big_int_all/cmake-build-debug/main" EXPLICIT_BUILD_TARGET_NAME="all">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CMake.Explicit.Target" explicitTargetName="all" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56cd604f-a42c-4f94-a56b-9e6bd2b0e73c" name="Changes" comment="" />
+      <created>1703147524502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1703147524502</updated>
+      <workItem from="1703147526110" duration="1842000" />
+      <workItem from="1703149433548" duration="1382000" />
+      <workItem from="1703663630298" duration="24000" />
+      <workItem from="1703663659341" duration="1326000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>

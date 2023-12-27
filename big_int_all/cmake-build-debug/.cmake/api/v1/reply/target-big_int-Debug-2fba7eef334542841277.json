@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "main"
+			"path" : "big_int"
 		}
 	],
 	"backtrace" : 1,
@@ -63,7 +63,7 @@
 			]
 		}
 	],
-	"id" : "main::@6890427a1f51a3e7e1df",
+	"id" : "big_int::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -84,8 +84,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "main",
-	"nameOnDisk" : "main",
+	"name" : "big_int",
+	"nameOnDisk" : "big_int",
 	"paths" : 
 	{
 		"build" : ".",

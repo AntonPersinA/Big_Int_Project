@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-6cd301cbe89eb6253a31.json",
-					"name" : "main",
+					"id" : "big_int::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-big_int-Debug-2fba7eef334542841277.json",
+					"name" : "big_int",
 					"projectIndex" : 0
 				}
 			]
