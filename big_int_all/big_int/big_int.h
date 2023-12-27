@@ -120,7 +120,7 @@ int big_int_miller_rabin(big_int *number, int count_of_check);//
 big_int *big_int_get_prime(int byte_len, int tst_count);//
 
 //! \brief Поиск Наибольшего Общего Делителя за O(log(min(a, b)))
-big_int *big_int_GCD(big_int *num_1, big_int *num_2);
+big_int *big_int_GCD(big_int *num_1, big_int *num_2);//
 
 //! \brief Поиск обратного в кольце остатков за О((log(num_2))^2)
-big_int *big_int_reverse_in_ring(big_int *number, big_int *ring);
+big_int *big_int_reverse_in_ring(big_int *number, big_int *ring);//

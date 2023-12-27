@@ -10,7 +10,7 @@
 
 #define ALMOST_BYTE_ 7
 #define BYTE_ 8
-#define _MAX_CHAR_ 255
+#define MAX_CHAR_ 255
 
 static big_int* big_int_get_func_res(big_int *res, const unsigned int *bit_len, const char *sign_bin, const char *bin_number) //Return the result for the function get big_int
 {
@@ -64,7 +64,7 @@ big_int *big_int_get(const char *bin_number)
 }
 
 
-static big_int *big_int_getloop_func(const char *bin_number, const long long int bit_len_loop, const long long int bit_len, big_int *res) //Returns the resultant for the getloop big_int function
+static big_int *big_int_getloop_func(const char *bin_number, const size_t bit_len_loop, const size_t bit_len, big_int *res) //Returns the resultant for the getloop big_int function
 {
     if (bin_number[0] == '-' || bin_number[0] == '+')
     {
@@ -80,7 +80,7 @@ static big_int *big_int_getloop_func(const char *bin_number, const long long int
         }
         return res;
     }
-    for (unsigned int i = 0; i < (bit_len_loop); ++i)
+    for (unsigned int i = 0; i < bit_len_loop; ++i)
     {
         res->number[i / BYTE_] += (bin_number[bit_len - i % bit_len - 1] - '0') << (i % BYTE_);
     }
@@ -96,7 +96,7 @@ static big_int *big_int_getloop_func(const char *bin_number, const long long int
 
 big_int *big_int_getloop(char *bin_number, int loop)
 {
-    long long int bit_len = strlen(bin_number);
+    size_t bit_len = strlen(bin_number);
     loop = loop <= 0 ? 1 : loop;
     char sign_bin = 0;
     big_int *res = (big_int *) calloc(1, sizeof(big_int));
@@ -114,7 +114,7 @@ big_int *big_int_getloop(char *bin_number, int loop)
     if (*bin_number == '+') {
         sign_bin = 1;
     }
-    long long int bit_len_loop = (strlen(bin_number) - sign_bin) * loop;
+    size_t bit_len_loop = (strlen(bin_number) - sign_bin) * loop;
 
     res->length = (bit_len_loop + ALMOST_BYTE_) >> 3;
     res->number = calloc(res->length, sizeof(res->number[0]));
@@ -676,7 +676,7 @@ static void big_int_sub1_helper_sub(big_int *res, big_int *num_1, big_int *num_2
             }
             else
             {
-                res->number[i] = _MAX_CHAR_;
+                res->number[i] = MAX_CHAR_;
             }
         }
     }
@@ -782,7 +782,7 @@ static void big_int_add2_helper__num_1morenum_2(big_int *num_1, big_int *num_2)
     {
         for (; i < num_1->length; ++i)
         {
-            if (num_1->number[i] == _MAX_CHAR_)
+            if (num_1->number[i] == MAX_CHAR_)
             {
                 num_1->number[i] = 0;
             }
@@ -805,7 +805,7 @@ static void big_int_add2_num_1leq2__helper_transfer_up(big_int *num_1, big_int *
     {
         for (; i < num_2->length; ++i)
         {
-            if (num_2->number[i] == _MAX_CHAR_)
+            if (num_2->number[i] == MAX_CHAR_)
             {
                 num_1->number[i] = 0;
             }
@@ -936,7 +936,7 @@ static void big_int_sub2_helper_len1_les_len2(big_int *num_1, big_int *num_2) //
         {
             if (num_1->number[i] == 0)
             {
-                num_1->number[i] = _MAX_CHAR_;
+                num_1->number[i] = MAX_CHAR_;
             }
             else
             {

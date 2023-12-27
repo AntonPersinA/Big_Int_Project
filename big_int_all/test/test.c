@@ -1811,7 +1811,7 @@ int test_get_prime(int limit)
 {
     for (int i = 0; i < limit; ++i)
     {
-        big_int *n1 = big_int_get_prime(1, 10);
+        big_int *n1 = big_int_get_prime(1, 10 + limit/100);
         if (n1->number[0] <= 1 && n1->length == 1)
         {
             printf("test_get_prime error1\n");
