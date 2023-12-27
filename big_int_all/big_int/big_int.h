@@ -116,7 +116,14 @@ big_int *big_int_pow_mod(big_int *num, big_int *power, big_int *modulus);//
 //! а k количество тестов, вероятность сгенерировать не простое = 0.25^k
 int big_int_miller_rabin(big_int *number, int count_of_check);//
 
-//! \brief Генерирует простое число, шанс что число не простое = 0.25^k
+
+//! \brief Генерирует простое число, шанс что число не простое = 0.25^k \n
+//! \Среднее
+//! time(len = 10) = 0.036782 \n
+//! time(len = 20) = 0.297455 \n
+//! time(len = 35) = 2.039046 \n
+//! time(len = 55) = 10.20345 \n
+//! time(len = 100) = 85.6437
 big_int *big_int_get_prime(int byte_len, int tst_count);//
 
 //! \brief Поиск Наибольшего Общего Делителя за O(log(min(a, b)))

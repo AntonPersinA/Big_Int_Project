@@ -139,7 +139,7 @@ big_int *big_int_get10(long long int num_1)
 void big_int_print(big_int *number)
 {
     putchar(number->sign);
-    for (int i = number->length - 1; i >= 0; --i)
+    for (long int i = (long int) number->length - 1; i >= 0; --i)
     {
         int bit = 128;
         for (int j = 7; j >= 0; --j)
@@ -156,7 +156,7 @@ void big_int_print(big_int *number)
 void big_int_print10(big_int *number)
 {
     signed long long int res = 0;
-    unsigned long long int pow2_long_long = 1;
+    signed long long int pow2_long_long = 1;
     for (unsigned int i = 0; i < (number->length > 8 ? 8 : number->length) ; ++i)
     {
         char pow2_char = 1;
@@ -181,7 +181,7 @@ void big_int_print10(big_int *number)
 signed long long int big_int_to10(big_int *number)
 {
     signed long long int res = 0;
-    unsigned long long int pow2_long_long = 1;
+    signed long long int pow2_long_long = 1;
     for (unsigned int i = 0; i < (number->length > 8 ? 8 : number->length) ; ++i)
     {
         char pow2 = 1;
@@ -350,6 +350,8 @@ static big_int *big_int_add1_helper_calculate(big_int *num_one, big_int *num_two
 }
 
 
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "misc-no-recursion"
 big_int *big_int_add1(big_int *num_one, big_int *num_two)
 {
     if (num_one->sign != num_two->sign)
@@ -386,6 +388,7 @@ big_int *big_int_add1(big_int *num_one, big_int *num_two)
     }
     return big_int_add1_helper_calculate(num_one, num_two, num_three, mx);
 }
+#pragma clang diagnostic pop
 
 
 //If the most significant byte of a number is less than 128,
@@ -484,7 +487,7 @@ void big_int_shft_l2(big_int *num_1, int cnt)
         return;
     }
 
-    for (int i = num_1->length - cnt - 1; i >= 0; --i)
+    for (int i = (int) num_1->length - cnt - 1; i >= 0; --i)
     {
         num_1->number[i + cnt] = num_1->number[i];
     }
@@ -548,7 +551,7 @@ void big_int_shft_r2(big_int *num_1, unsigned int cnt)
 }
 
 
-#define _SMTH_CONST_NOT1OR0_ 123
+#define SMTH_CONST_NOT1OR0_ 123
 static int big_int_leq_helper_if(big_int *num_1, big_int *num_2) //The function looks at signs and length, nothing more
 {
     if (num_1->sign == '-' && num_2->sign == '+')
@@ -575,7 +578,7 @@ static int big_int_leq_helper_if(big_int *num_1, big_int *num_2) //The function 
         }
         return 0;
     }
-    return _SMTH_CONST_NOT1OR0_; //Any number is important not 0 and 1
+    return SMTH_CONST_NOT1OR0_; //Any number is important not 0 and 1
 }
 
 
@@ -584,7 +587,7 @@ int big_int_leq(big_int *num_1, big_int *num_2) //num_1<=num_2
     big_int_dlz(num_1);
     big_int_dlz(num_2);
     int exit = big_int_leq_helper_if(num_1, num_2);
-    if (exit != _SMTH_CONST_NOT1OR0_)
+    if (exit != SMTH_CONST_NOT1OR0_)
     {
         return exit;
     }
@@ -1230,7 +1233,7 @@ static void big_int_divide_helper_do(big_int *Q, big_int *R, big_int *dividend, 
         for (int i = 128; i >=1; i >>= 1)
         {
             big_int_shft_l(R);
-            R->number[0] = (R->number[0]) | ((i & dividend->number[j]) && 1);
+            R->number[0] = (R->number[0]) | ((i & dividend->number[j]) != 0);
             if (big_int_meq(R, denominator))
             {
                 big_int_sub2(R, denominator);
@@ -1266,7 +1269,7 @@ static big_int *big_int_divide_helper(big_int *dividend, big_int *denominator)
     for (int index = no_meaning_zero; index >=1; index >>= 1)
     {
         big_int_shft_l(R);
-        R->number[0] = (R->number[0]) | ((index & dividend->number[(dividend->length - 1)]) && 1);
+        R->number[0] = (R->number[0]) | ((index & dividend->number[(dividend->length - 1)]) != 0);
         if (big_int_meq(R, denominator))
         {
             big_int_sub2(R, denominator);
@@ -1343,7 +1346,7 @@ static void big_int_mod_helper_do(big_int *Q, big_int *R, big_int *dividend, big
         for (int i = 128; i >= 1; i >>= 1)
         {
             big_int_shft_l(R);
-            R->number[0] = (R->number[0]) | ((i & dividend->number[j]) && 1);
+            R->number[0] = (R->number[0]) | ((i & dividend->number[j]) != 0);
             if (big_int_meq(R, denominator))
             {
                 big_int_sub2(R, denominator);
@@ -1380,7 +1383,7 @@ static big_int *big_int_mod_helper(big_int *dividend, big_int *denominator)
     for (int index = no_meaning_zero; index >=1; index >>= 1)
     {
         big_int_shft_l(R);
-        R->number[0] = (R->number[0]) | ((index & dividend->number[(dividend->length - 1)]) && 1);
+        R->number[0] = (R->number[0]) | ((index & dividend->number[(dividend->length - 1)]) != 0);
         if (big_int_meq(R, denominator))
         {
             big_int_sub2(R, denominator);
@@ -1692,39 +1695,6 @@ big_int *big_int_get_prime(int byte_len, int tst_count)
         }
         big_int_free(&rnd_digit);
         rnd_digit = big_int_rnd_odd(byte_len);
-    }
-}
-
-
-big_int *big_int_get_prime_for(int byte_len, int tst_count)
-{
-    srand(time(NULL) + rand());
-    big_int *two = big_int_get("10");
-    big_int *four = big_int_get("100");
-    big_int *six = big_int_get("110");
-    big_int *rnd_digit = big_int_rnd_odd(byte_len);
-    rnd_digit->number[rnd_digit->length - 1] %= (rand()%70 + 30);
-    rnd_digit->number[rnd_digit->length - 1] += 1;
-    rnd_digit->number[0] += !(rnd_digit->number[0] % 2);
-    big_int *digit_mod6 = big_int_mod(rnd_digit, six);
-    for (int i = big_int_to10(digit_mod6) - 1; i > 0; i -= 2)
-    {
-        big_int_add2(rnd_digit, two);
-    }
-    while(1)
-    {
-        big_int_add2(rnd_digit, four);
-        if (big_int_miller_rabin(rnd_digit, tst_count))
-        {
-            big_int_free2(4, &two, &four, &six, &digit_mod6);
-            return rnd_digit;
-        }
-        big_int_add2(rnd_digit, two);
-        if (big_int_miller_rabin(rnd_digit, tst_count))
-        {
-            big_int_free2(4, &two, &four, &six, &digit_mod6);
-            return rnd_digit;
-        }
     }
 }
 

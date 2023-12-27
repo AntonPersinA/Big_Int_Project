@@ -17,12 +17,12 @@
 int time_test()
 {
     long double cnt = 100;
-    for (int len = 20; len < 100; )
+    for (int len = 100; len < 101; len += 50)
     {
         clock_t start, end, start_for, end_for;
         long double time_max = 0, time_min = 1000000000;
         start = clock();
-        for (int j = 0; j < cnt; ++j)
+        for (int j = 1; j < cnt + 1; ++j)
         {
             start_for = clock();
             big_int *res = big_int_get_prime(len, 10);
@@ -36,6 +36,8 @@ int time_test()
             {
                 time_min = ((long double)end_for - (long double)start_for) / CLOCKS_PER_SEC;
             }
+            end = clock();
+            printf("time(len = %d) = %Lf,    time_max = %Lf,    time_min = %Lf\n", len, ((long double)end - (long double)start) / CLOCKS_PER_SEC / j, time_max, time_min);
         }
         end = clock();
         printf("time(len = %d) = %Lf,    time_max = %Lf,    time_min = %Lf\n", len, ((long double)end - (long double)start) / CLOCKS_PER_SEC / cnt, time_max, time_min);
@@ -45,32 +47,19 @@ int time_test()
 
 int while_true_func()
 {
-    int i = 11; //1026
-    while (test_all(i) && i < 11) //1750
+    int i = 1; //1026
+    while (test_all(i) && i < 1750) //1750
     {
         printf("i = %d\n", i);
-        ++i;
+        i += 1;
     }
-}
-
-
-int func_search_prime()
-{
-    clock_t start, end;
-    start = clock();
-    big_int *n1 = big_int_get_prime(507, 10);
-    end = clock();
-
-    printf("time = %Lf\n", ((long double)end - (long double)start) / (long double)CLOCKS_PER_SEC);
-
-    big_int_print(n1);
 }
 
 
 int main()
 {
-    while_true_func();
-
+    time_test();
+//    while_true_func();
     return 0;
 }
 
