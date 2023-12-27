@@ -1795,7 +1795,7 @@ int test_miller_rabin(int limit) //Следует выставлять хотя 
         if (pr_test != pr_miller)
         {
             printf("errrrroooooorrrrrr\ntest_miller_rabin = %d\n", pr_miller);
-            printf("test = %d\n", pr_test);
+            printf("pr test = %d\n", pr_test);
             big_int_print10(n1);
             big_int_free2(4, &one, &zero, &two, &n1);
             return 0;

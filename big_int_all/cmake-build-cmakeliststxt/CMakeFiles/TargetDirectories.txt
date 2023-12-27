@@ -1,0 +1,3 @@
+/home/anton/CLionProjects/BI_Project/big_int_all/cmake-build-cmakeliststxt/CMakeFiles/test.dir
+/home/anton/CLionProjects/BI_Project/big_int_all/cmake-build-cmakeliststxt/CMakeFiles/edit_cache.dir
+/home/anton/CLionProjects/BI_Project/big_int_all/cmake-build-cmakeliststxt/CMakeFiles/rebuild_cache.dir
